@@ -29,7 +29,7 @@ public class Array2dUtilityTest {
                 };
 
         array2d3 =
-                new int[][] {
+                new int[][]{
                         {14, 2, 3, 14, 5},
                         {6, 71, 28, 9, 30},
                         {11, 123, 13, 14, 15},
@@ -53,12 +53,14 @@ public class Array2dUtilityTest {
         assertTrue(Array2dUtility.sum(array2d3) == 1005);
     }
 
+
     @org.junit.jupiter.api.Test
     void average() {
         assertTrue(Array2dUtility.average(array2d) == 10.44);
         assertTrue(Array2dUtility.average(array2d2) == 30.88);
         assertTrue(Array2dUtility.average(array2d3) == 40.2);
     }
+
 
     @org.junit.jupiter.api.Test
     void minimum() {
@@ -67,12 +69,14 @@ public class Array2dUtilityTest {
         assertTrue(Array2dUtility.minimum(array2d3) == 2);
     }
 
+
     @org.junit.jupiter.api.Test
     void maximum() {
         assertTrue(Array2dUtility.maximum(array2d) == 25);
         assertTrue(Array2dUtility.maximum(array2d2) == 203);
         assertTrue(Array2dUtility.maximum(array2d3) == 222);
     }
+
 
     @org.junit.jupiter.api.Test
     void evenCountStandard() {
@@ -81,6 +85,7 @@ public class Array2dUtilityTest {
         assertTrue(Array2dUtility.evenCountStandard(array2d3) == 12);
     }
 
+
     @org.junit.jupiter.api.Test
     void evenCountEnhanced() {
         assertTrue(Array2dUtility.evenCountEnhanced(array2d) == 12);
@@ -88,12 +93,14 @@ public class Array2dUtilityTest {
         assertTrue(Array2dUtility.evenCountEnhanced(array2d3) == 12);
     }
 
+
     @org.junit.jupiter.api.Test
     void allPositive() {
         assertTrue(Array2dUtility.allPositive(array2d) == false);
         assertTrue(Array2dUtility.allPositive(array2d2) == false);
         assertTrue(Array2dUtility.allPositive(array2d3) == true);
     }
+
 
     @org.junit.jupiter.api.Test
     void rowSums() {
